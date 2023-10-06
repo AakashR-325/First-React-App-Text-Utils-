@@ -24,7 +24,7 @@ export default function TextForm(props) {
   return (
     <>
       <div className="container">
-      <h1>{props.heading}</h1>
+      <h1 style={props.myStyle}>{props.heading}</h1>
       <div className="mb-3">
         <label htmlFor="myBox" className="form-label"></label>
         <textarea className="form-control" id="myBox" value={text} onChange={handleOnChange} rows="10"></textarea>
@@ -35,11 +35,11 @@ export default function TextForm(props) {
       </div>
 
       <div className="container my-5">
-        <h1>Text Summary :</h1>
-        <p>{text.split(" ").length} words and {text.length} characters</p>
-        <p>Approx. time taken to read the text : {(text.split(" ").length * 0.008)} minutes</p>
-        <h2>Preview</h2>
-        <p>{text}</p>
+        <h1  style={props.myStyle}>Text Summary :</h1>
+        <p style={props.myStyle}># {text.split(" ").length} words and {text.length} characters</p>
+        <p style={props.myStyle}># Approx. time taken to read the text : {(text.split(" ").length * 0.008)} minutes</p>
+        <h2 style={props.myStyle}>Preview</h2>
+        <p style={props.myStyle}>{text.length>0?text:"Enter your text in the above box to preview here"}</p>
       </div>
     </>
   )
