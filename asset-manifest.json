@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mFirst-React-App-Text-Utils-/static/css/main.e6c13ad2.css",
+    "main.js": "/mFirst-React-App-Text-Utils-/static/js/main.30bca0e3.js",
+    "static/js/787.3bf0dcc2.chunk.js": "/mFirst-React-App-Text-Utils-/static/js/787.3bf0dcc2.chunk.js",
+    "index.html": "/mFirst-React-App-Text-Utils-/index.html",
+    "main.e6c13ad2.css.map": "/mFirst-React-App-Text-Utils-/static/css/main.e6c13ad2.css.map",
+    "main.30bca0e3.js.map": "/mFirst-React-App-Text-Utils-/static/js/main.30bca0e3.js.map",
+    "787.3bf0dcc2.chunk.js.map": "/mFirst-React-App-Text-Utils-/static/js/787.3bf0dcc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.30bca0e3.js"
+  ]
+}
