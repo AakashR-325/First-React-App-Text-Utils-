@@ -10,15 +10,33 @@ export default function TextForm(props) {
     console.log("Uppercase button was pressed");
     let newText = text.toUpperCase();
     setText(newText);
+    if(text != ""){
+      props.showAlert("Converted to upper case" , "success");
+    }
+    else{
+      props.showAlert("No text to convert !" , "danger");
+    }
   }
   const handleLowClick = () => {
     console.log("Lowercase button was pressed");
     let newText = text.toLowerCase();
     setText(newText);
+    if(text != ""){
+      props.showAlert("Converted to lower case" , "success");
+    }
+    else{
+      props.showAlert("No text to convert !" , "danger");
+    }
   }
   const handleClearClick = () => {
     console.log("Clear Text button was pressed");
     setText("");
+    if(text != ""){
+      props.showAlert("Cleared text" , "success");
+    }
+    else{
+      props.showAlert("No text to clear !" , "danger");
+    }
   }
   const[text , setText] = useState("");
   return (
